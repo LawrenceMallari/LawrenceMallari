@@ -1,0 +1,440 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rence Tasty Restaurant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container container">
+          <input type="checkbox" name="" id="">
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#food">Category</a></li>
+              <li><a href="#food-menu">Menu</a></li>
+              <li><a href="#testimonials">Testimonial</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+          <h1 class="logo">LM</h1>
+      </div>
+  </nav>
+    <section class="showcase-area" id="showcase">
+      <div class="showcase-container">
+        <h1 class="main-title" id="home">Welcome To Rence Tasty Restaurant</h1>
+        <p>Anytime, Anywhere, Delicious.</p>
+        <a href="#food-menu" class="btn btn-primary">Menu</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-wrapper container">
+        <div class="about-text">
+          <p class="small">About Us</p>
+          <h2>Tasty Food Always Can Make Your Moment Really Happy</h2>
+          <p>
+            Our Mission is to provide fresh, healthy, nutritious and great tasting food at reasonable prices in a clean, friendly and convenient environment.
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="img\Chef.PNG">
+        </div>
+
+      </div>
+    </section>
+    <section id="food">
+      <h2>TYPES OF FOOD</h2>
+      <div class="food-container container">
+        <div class="food-type fruite">
+          <div class="img-container">
+          <img src="img\Fruits.PNG">
+            <div class="img-content">
+              <h3>FRUITS</h3>
+              <p>Fruits are delicious and nutritious natural foods that are packed with vitamins, minerals, and fiber.</p>
+            </div>
+          </div>
+        </div>
+        <div class="food-type vegetable">
+          <div class="img-container">
+            <img src="img\Vegetables.PNG">
+            <div class="img-content">
+              <h3>VEGETABLES</h3>
+              <p>Vegetables are essential for a well-rounded diet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="food-type meat">
+          <div class="img-container">
+            <img src="img\Meat.PNG">
+            <div class="img-content">
+              <h3>MEAT</h3>
+              <p></p>Meat is a great source of high-quality protein and essential nutrients like iron, zinc, and vitamin B12.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="food-menu">
+
+      <div class="cart">
+        <h2>YOUR CART</h2>
+        <ul class="cart-items">
+          <!-- Cart items will be added dynamically using JavaScript -->
+        </ul>
+        <p class="cart-total">TOTAL: <span class="total">₱0</span></p>
+        <button class="checkout">Checkout</button>
+      </div>
+
+      <div class="overlay">
+        <div class="checkout-form">
+          <h2>Checkout</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+    
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+    
+            <p>Select Payment Method:</p>
+            <div class="payment-options">
+              <input type="radio" id="gcash" name="payment-method" value="gcash" checked>
+              <label for="gcash">GCash</label>
+              
+              <input type="radio" id="visa" name="payment-method" value="visa">
+              <label for="visa">Visa</label>
+              
+              <input type="radio" id="paypal" name="payment-method" value="paypal">
+              <label for="paypal">PayPal</label>
+            </div>
+    
+            <div class="button-group">
+              <button type="submit">Place Order</button>
+              <button type="button" class="cancel">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <h2 class="food-menu-heading">Food Menu</h2>
+      <div class="food-menu-container container">
+        <div class="food-menu-item">
+          <div class="food-img">
+           <img src="img\Applebee_s.PNG">
+          </div>
+          <div class="food-description">
+            <h1 class="food-title">Applebee's</h2>
+            <p class="food-details">
+                For calorie-appropriate portions, look for Applebee's Lighter Fare, which are all under 700 calories per dish. 
+            </p>
+            <p class="food-price">₱250</p>
+            <button class="add-to-cart">Add to Cart</button>
+           
+          </div>
+        </div>
+
+        <div class="food-menu-item">
+          <div class="food-img">
+           <img src="img\Crispy Fried Chicken.PNG">
+
+          </div>
+          <div class="food-description">
+            <h2 class="food-title">
+                Crispy Fried Chicken</h2>
+            <p class="food-details">
+                Chicken is one of the most loved meats around the world, and here is a dish that never fails. Fried Chicken is one of the easiest dishes that you can make at home for your loved ones.
+            </p>
+            <p class="food-price">₱500</p>
+            <button class="add-to-cart">Add to Cart</button>
+
+    
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="img\Golden Corral.PNG">
+          </div>
+          <div class="food-description">
+            <h2 class="food-title">Golden Corral</h2>
+                
+            <p class="food-details">
+                At the Golden Corral, you can cruise the salad bar for your perfect plate. Get what looks good to you.
+            </p>
+            <p class="food-price">₱780</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+          <img src="img\Hardee_s.PNG">
+          </div>
+          <div class="food-description">
+            <h2 class="food-title">Hardee's</h2>
+            <p class="food-details">
+                Hardee's is keyed into dietary restrictions, offering options that are low-carb lettuce-wrapped burgers, vegetarian, low-cal and gluten-free.
+            </p>
+            <p class="food-price">₱400</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+           <img src="img\Panera Bread.PNG">
+          </div>
+          <div class="food-description">
+            <h2 class="food-title">Panera Bread</h2>
+            <p class="food-details">
+                Choosing half a sandwich and a cup of soup or side salad is a great way to go at Panera.
+            </p>
+            <p class="food-price">₱180</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="img\Hybrid Cheese Burger.PNG">
+          </div>
+          <div class="food-description">
+            <h2 class="food-title">Hybrid Cheesy Burgers.</h2>
+            <p class="food-details">
+                The appeal of these new Slinger burgers, which are a blend of beef and mushrooms, is that they're indistinguishable from an all-beef patty and if prepared correctly, they're even more flavourful than beef burgers.
+            </p>
+            <p class="food-price">₱800</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <h2 class="testimonial-title">What Our Customers Say</h2>
+      <div class="testimonial-container container">
+        <div class="testimonial-box">
+          <div class="customer-detail">
+            <div class="customer-photo">
+              <img src="img\Dane Obina.PNG">
+              <p class="customer-name">Dane Obina</p>
+            </div>
+          </div>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="testimonial-text">
+            Great food at reasonable prices. Great service and the owners are terrific.
+          </p>
+         
+        </div>
+        <div class="testimonial-box">
+          <div class="customer-detail">
+            <div class="customer-photo">
+              <img src="img\Joycel Silvano.PNG">
+              <p class="customer-name">Joycel Silvano</p>
+            </div>
+          </div>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="testimonial-text">
+            Fantastic snacks! The prepared foods are delicious!. Will definitely come back.
+          </p>
+         
+        </div>
+        <div class="testimonial-box">
+          <div class="customer-detail">
+            <div class="customer-photo">
+              <img src="img\Gerald Terrado.PNG">
+              <p class="customer-name">Gerald Terrado</p>
+            </div>
+          </div>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="testimonial-text">
+            Thank you for your food. It's so fresh and delicious and it takes the work and guess-work out of my busy life when it comes to eating. AWESOME! 
+          </p>
+         
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-container container">
+        <div class="contact-img">
+          <img src="img\Contact.PNG">
+        </div>
+
+        <div class="form-container">
+          <h2>Contact Us</h2>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="E-Mail" />
+          <textarea
+            cols="30"
+            rows="6"
+            placeholder="Type Your Message"
+          ></textarea>
+          <a href="#" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <h2>Rence Tasty Restaurant &copy; all rights reserved</h2>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    // inline the javascript
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on("click", function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
+        } // End if
+      });
+    });
+    
+    document.addEventListener("DOMContentLoaded", function() {
+      const addToCartButtons = document.querySelectorAll(".add-to-cart");
+      const cartItems = document.querySelector(".cart-items");
+      const totalElement = document.querySelector(".total");
+      const checkoutButton = document.querySelector(".checkout");
+      const overlay = document.querySelector(".overlay");
+      const checkoutForm = document.querySelector(".checkout-form");
+      const cancelButton = document.querySelector(".cancel");
+    
+      let cart = [];
+    
+      addToCartButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+          const product = button.parentNode;
+          const title = product.querySelector(".food-title").textContent;
+          const price = parseFloat(product.querySelector(".food-price").textContent.slice(1));
+    
+          // Check if the product is already in the cart
+          const existingItem = cart.find(item => item.title === title);
+    
+          if (existingItem) {
+            // Increment the quantity if the product is already in the cart
+            existingItem.quantity++;
+            existingItem.total += price;
+          } else {
+            // Add the product to the cart
+            const item = {
+              title: title,
+              price: price,
+              quantity: 1,
+              total: price
+            };
+            cart.push(item);
+          }
+    
+          updateCart();
+        });
+      });
+    
+      function updateCart() {
+        cartItems.innerHTML = "";
+        let cartTotal = 0;
+    
+        cart.forEach(function(item) {
+          const cartItem = document.createElement("li");
+          cartItem.textContent = `${item.title} (Quantity: ${item.quantity}) - ₱${item.total.toFixed(2)}`;
+          
+          const removeButton = document.createElement("button");
+          removeButton.className = "remove-button";
+          removeButton.textContent = "Remove";
+          removeButton.addEventListener("click", function() {
+            removeItemFromCart(item);
+          });
+          
+          cartItem.appendChild(removeButton);
+          cartItems.appendChild(cartItem);
+          cartTotal += item.total;
+        });
+    
+        totalElement.textContent = `₱${cartTotal.toFixed(2)}`;
+      }
+
+      function removeItemFromCart(item) {
+        const itemIndex = cart.findIndex(cartItem => cartItem.title === item.title);
+        if (itemIndex !== -1) {
+          cart.splice(itemIndex, 1);
+          updateCart();
+        }
+      }
+    
+      checkoutButton.addEventListener("click", function() {
+        overlay.style.display = "flex";
+      });
+    
+      checkoutForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+    
+        const name = document.querySelector("#name").value;
+        const email = document.querySelector("#email").value;
+        const address = document.querySelector("#address").value;
+    
+        if (name && email && address) {
+          // Perform checkout logic here, e.g., send order details to a server
+          alert("Order placed successfully!");
+          cart = [];
+          updateCart();
+          overlay.style.display = "none";
+        } else {
+          alert("Please fill in all the fields.");
+        }
+      });
+    
+      cancelButton.addEventListener("click", function() {
+        overlay.style.display = "none";
+      });
+    });
+  </script>  
+
+</body>
+</html>
